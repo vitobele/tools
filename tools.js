@@ -41,6 +41,39 @@ window.onload = function () {
 		content:
           "A secure, modern user management system for PHP. UserFrosting is a secure, modern user management system written in PHP and built on top of the Slim Microframework, Twig templating engine, and Eloquent ORM.",
       },
+	  {
+        name: "List.js",
+		user: "javve",
+		repo: "list.js",
+		img_url: "https://listjs.com/assets/images/graphics/listjs-logo.png",
+        repo_url: "https://github.com/javve/list.js",
+		site_url: "https://listjs.com/",
+        path: "javve/list.js",
+		content:
+          "The perfect library for adding search, sort, filters and flexibility to tables, lists and various HTML elements. Built to be invisible and work on existing HTML.",
+      },
+	  {
+        name: "aaPanel",
+		user: "aaPanel",
+		repo: "aaPanel",
+		img_url: "https://avatars.githubusercontent.com/u/31841517",
+        repo_url: "https://github.com/aaPanel/aaPanel",
+		site_url: "https://www.aapanel.com/",
+        path: "aaPanel/aaPanel",
+		content:
+          "Simple but Powerful web-based Control Panel. Free and Open source Hosting Control Panel.",
+      },
+	  {
+        name: "defer.js",
+		user: "shinsenter",
+		repo: "defer.js",
+		img_url: "",
+        repo_url: "https://github.com/shinsenter/defer.js",
+		site_url: "https://shinsenter.github.io/defer.js/",
+        path: "shinsenter/defer.js",
+		content:
+          "A super small, super efficient library that helps you lazy load almost everything like images, video, audio, iframes as well as stylesheets, and JavaScript.",
+      },
     ],
   });
 
