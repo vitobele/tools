@@ -11,6 +11,11 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 	
+	<!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="tools.js"></script>
+	
 	<!-- Favicons -->
 	<link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
 	
@@ -35,72 +40,40 @@
 		</section>
 		
 		<div class="container ">
-			<div class="row" data-masonry='{"percentPosition": true }'>
+			<div class="row tool_list" id="target" data-masonry='{"percentPosition": true }'>
+				
+			<script id="template" type="text/x-handlebars-template">
+				{{#each tool}}
 				<div class="col-sm-6 col-lg-4 mb-4">
 					<div class="card shadow-sm">
-						<a href="https://sweetalert2.github.io/" target="_blank" title="SweetAlert2">
-							<img src="https://avatars.githubusercontent.com/u/35137722" class="card-img-top bd-placeholder-img hg-250 objfit-contain" alt="SweetAlert2" title="SweetAlert2">
+						{{#if img_url}}
+						<a href="{{site_url}}" target="_blank" title="{{name}}">
+							<img src="{{img_url}}" class="card-img-top bd-placeholder-img hg-250 objfit-contain" alt="{{name}}" title="{{name}}">
 						</a>
+						{{else}}
+						{{/if}}
 						<div class="card-body">
-							<h3 class="card-title">SweetAlert2</h3>
+							<h3 class="card-title">{{name}}</h3>
 							<div class="info mb-4">
 								<i class="fab fa-github"></i>
-								<a href="https://github.com/sweetalert2/sweetalert2" class="link-secondary link-to" target="_blank" title="SweetAlert2">
-									sweetalert2/sweetalert2
+								<a href="{{repo_url}}" class="link-secondary link-to" target="_blank" title="{{name}}">
+									{{path}}
 								</a>
 							</div>
-							<p class="card-text">A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.</p>
+							<p class="card-text small">{{content}}</p>
 						</div>
+						{{#if user}}
 						<div class="card-footer bg-transparent border-gray fs-4 ">
 							<!-- Place this tag where you want the button to render. -->
-							<iframe src="https://ghbtns.com/github-btn.html?user=sweetalert2&repo=sweetalert2&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-							<iframe src="https://ghbtns.com/github-btn.html?user=sweetalert2&repo=sweetalert2&type=fork&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+							<iframe src="https://ghbtns.com/github-btn.html?user={{user}}&repo={{repo}}&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
+							<iframe src="https://ghbtns.com/github-btn.html?user={{user}}&repo={{repo}}&type=fork&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
 						</div>
+						{{else}}
+						{{/if}}
 					</div>
 				</div>
-				
-				<div class="col-sm-6 col-lg-4 mb-4">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h3 class="card-title">Typora-Portable</h3>
-							<div class="info mb-4">
-								<i class="fab fa-github"></i>
-								<a href="https://github.com/tobyqin/Typora-Portable" class="link-secondary link-to" target="_blank" title="typora-portable">
-									tobyqin/Typora-Portable
-								</a>
-							</div>
-							<p class="card-text">The portable version of typora, go to <a href="https://github.com/tobyqin/Typora-Portable/releases/" target="_blank">Release page</a> to download the zip package, then you are ready to go! Please note, this portable version is only for Windows platform.</p>
-						</div>
-						<div class="card-footer bg-transparent border-gray fs-4 ">
-							<iframe src="https://ghbtns.com/github-btn.html?user=tobyqin&repo=Typora-Portable&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-							<iframe src="https://ghbtns.com/github-btn.html?user=tobyqin&repo=Typora-Portable&type=fork&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm-6 col-lg-4 mb-4">
-					<div class="card shadow-sm">
-						<a href="https://www.userfrosting.com/" target="_blank" title="UserFrosting">
-							<img src="https://avatars.githubusercontent.com/u/12834031" class="card-img-top bd-placeholder-img hg-250 objfit-contain" alt="UserFrosting">
-						</a>
-						<div class="card-body">
-							<h3 class="card-title">UserFrosting</h3>
-							<div class="info mb-4">
-								<i class="fab fa-github"></i>
-								<a href="https://github.com/userfrosting/UserFrosting" class="link-secondary link-to" target="_blank" title="UserFrosting">
-									userfrosting/UserFrosting
-								</a>
-							</div>
-							<p class="card-text">A secure, modern user management system for PHP. UserFrosting is a secure, modern user management system written in PHP and built on top of the Slim Microframework, Twig templating engine, and Eloquent ORM.</p>
-						</div>
-						<div class="card-footer bg-transparent border-gray fs-4 ">
-							<!-- Place this tag where you want the button to render. -->
-							<iframe src="https://ghbtns.com/github-btn.html?user=userfrosting&repo=UserFrosting&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-							<iframe src="https://ghbtns.com/github-btn.html?user=userfrosting&repo=UserFrosting&type=fork&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
-						</div>
-					</div>
-				</div>
-				
+				{{/each}}
+			</script>	
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</main>
