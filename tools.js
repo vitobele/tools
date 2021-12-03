@@ -85,6 +85,17 @@ window.onload = function () {
 		content:
           "Laragon is a portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby. It is fast, lightweight, easy-to-use and easy-to-extend.",
       },
+	  {
+        name: "Isotope",
+		user: "metafizzy",
+		repo: "isotope",
+		img_url: "",
+        repo_url: "https://github.com/metafizzy/isotope",
+		site_url: "https://isotope.metafizzy.co/",
+        path: "metafizzy/isotope",
+		content:
+          "Filter & sort magical layouts",
+      },
     ],
   });
 
