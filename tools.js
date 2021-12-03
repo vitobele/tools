@@ -74,6 +74,17 @@ window.onload = function () {
 		content:
           "A super small, super efficient library that helps you lazy load almost everything like images, video, audio, iframes as well as stylesheets, and JavaScript.",
       },
+	  {
+        name: "laragon",
+		user: "leokhoa",
+		repo: "laragon",
+		img_url: "",
+        repo_url: "https://github.com/leokhoa/laragon",
+		site_url: "https://laragon.org/",
+        path: "leokhoa/laragon",
+		content:
+          "Laragon is a portable, isolated, fast & powerful universal development environment for PHP, Node.js, Python, Java, Go, Ruby. It is fast, lightweight, easy-to-use and easy-to-extend.",
+      },
     ],
   });
 
