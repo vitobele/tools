@@ -32,7 +32,7 @@ window.onload = function() {
                 user: "userfrosting",
                 repo: "UserFrosting",
                 img_url: "https://avatars.githubusercontent.com/u/12834031?s=250&v=4",
-                repo_url: "https://github.com/tobyqin/Typora-Portable",
+                repo_url: "https://github.com/userfrosting/UserFrosting",
                 site_url: "https://www.userfrosting.com",
                 path: "userfrosting/UserFrosting",
                 content: "A secure, modern user management system for PHP. UserFrosting is a secure, modern user management system written in PHP and built on top of the Slim Microframework, Twig templating engine, and Eloquent ORM.",
