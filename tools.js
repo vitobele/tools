@@ -127,6 +127,17 @@ window.onload = function() {
                 path: "marrio-h/universal-parallax",
                 content: "Easy parallax plugin using pure javascript. Also works on mobile platforms. Cross browser support.",
             },
+			{
+                name: "Swiper",
+                user: "nolimits4web",
+                repo: "swiper",
+                img_url: "https://cdn.statically.io/img/swiperjs.com/f=auto,w=auto,h=250/images/share-banner.png",
+				img_class: "-fluid",
+                repo_url: "https://github.com/nolimits4web/swiper",
+                site_url: "https://swiperjs.com/",
+                path: "nolimits4web/swiper",
+                content: "Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.",
+            },
         ],
     });
 

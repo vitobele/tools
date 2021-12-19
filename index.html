@@ -21,10 +21,12 @@
 	
 	<style>
 		a {text-decoration: none;}
-		.hg-250{height:250px;}
+		.hg-200{height:200px;}
 		.min-hg-200 {min-height: 200px;}
 		.objfit-contain{object-fit: contain;}
+		.card-footer {display: flex; min-height: 37px; justify-content: center;}
 		.card-footer>iframe {width: 48%; float: left; margin-right: 5px;}
+		img.bd-placeholder-img-fluid {height: auto !important; max-width: 100%;min-height: 9.75rem;}
 	</style>
 
 </head>
@@ -48,7 +50,7 @@
 					<div class="card shadow-sm">
 						{{#if img_url}}
 						<a href="{{site_url}}" target="_blank" title="{{name}}">
-							<img src="{{img_url}}" class="card-img-top bd-placeholder-img hg-250 objfit-contain" alt="{{name}}" title="{{name}}">
+							<img src="{{img_url}}" class="card-img-top bd-placeholder-img{{img_class}} hg-200 objfit-contain" alt="{{name}}" title="{{name}}">
 						</a>
 						{{else}}
 						{{/if}}
