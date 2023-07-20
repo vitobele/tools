@@ -132,7 +132,6 @@ window.onload = function() {
                 user: "nolimits4web",
                 repo: "swiper",
                 img_url: "https://swiperjs.com/images/swiper-logo.svg?s=250&v=4",
-				img_class: "-fluid",
                 repo_url: "https://github.com/nolimits4web/swiper",
                 site_url: "https://swiperjs.com/",
                 path: "nolimits4web/swiper",
