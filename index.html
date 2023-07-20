@@ -42,11 +42,11 @@
 		</section>
 		
 		<div class="container">
-			<div class="row tool_list js-masonry" id="target" data-masonry-options='{"percentPosition": true }' >
+			<div class="row tool_list js-masonry" id="target" data-masonry-options='{"itemSelector": ".inisial", "percentPosition": true }' >
 				
 			<script id="template" type="text/x-handlebars-template">
 				{{#each tool}}
-				<div class="col-sm-6 col-lg-4 mb-4">
+				<div class="col-sm-6 col-lg-4 mb-4 inisial">
 					<div class="card shadow-sm">
 						{{#if img_url}}
 						<a href="{{site_url}}" target="_blank" title="{{name}}">
