@@ -134,7 +134,6 @@ window.onload = function() {
                 img_url: "https://swiperjs.com/images/swiper-logo.svg?s=250&v=4",
                 repo_url: "https://github.com/nolimits4web/swiper",
                 site_url: "https://swiperjs.com/",
-		img_class: "-fluid",
                 path: "nolimits4web/swiper",
                 content: "Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.",
             },
